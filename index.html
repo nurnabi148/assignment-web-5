@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="index.css">
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  .poppins-thin {
+  font-family: "Poppins", sans-serif;
+ 
+  font-style: normal;
+}
+
+</style>
 </head>
-<body class="bg-[#F4F7FF]">
+<body class="bg-[#F4F7FF] poppins-thin">
     <section class="max-w-screen-2xl min-h-24 mx-auto pt-10  ">
         <header class="">
           <nav class="">
@@ -19,7 +30,7 @@
                   <!-- <a class="btn btn-ghost text-xl">Dev<span class="font-bold">Board</span></a> -->
                    <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
                 </div>
-                <div class=" flex gap-5">
+                <div class=" flex gap-5 pr-4">
                   <button class="btn rounded-full gap-4"><input type="checkbox" checked="checked" class="checkbox checkbox-info " /><span id="increment" class="font-bold text-2xl">23</span></button>
                   <!-- <button--  class="btn p-5 rounded-full"></button-->
                   <img class="" id="colorChange" src="assets/theme-btn.png" alt="">
@@ -78,7 +89,7 @@
             </div>
   
              <hr class="border-gray-300 border-dashed mb-5">
-           
+     <!-- ----------------    card 1                ---------- -->
             <div class="grid grid-cols-3 gap-5">
               <div class="card w-80 bg-[#F4F7FF] card-md shadow-sm">
                 <div class="card-body">
@@ -103,6 +114,7 @@
                   </div>
                 </div>
               </div>
+              <!--------------------------- card2--------------------- -->
               <div class="card w-80 bg-[#F4F7FF] card-md shadow-sm">
                 <div class="card-body">
                   <div class="border bg-white border-none p-1 rounded-md w-2/5">
@@ -126,6 +138,7 @@
                   </div>
                 </div>
               </div>
+              <!---------------------------- card3------------------------------ -->
               <div class="card w-80 bg-[#F4F7FF] card-md shadow-sm">
                 <div class="card-body">
                   <div class="border bg-white border-none p-1 rounded-md w-2/5">
@@ -149,6 +162,7 @@
                   </div>
                 </div>
               </div>
+              <!------------------------------- card4---------------------- -->
               <div class="card w-80 bg-[#F4F7FF] card-md shadow-sm">
                 <div class="card-body">
                   <div class="border bg-white border-none p-1 rounded-md w-2/5">
@@ -172,6 +186,7 @@
                   </div>
                 </div>
               </div>
+              <!------------------------------- card5---------------------- -->
               <div class="card w-80 bg-[#F4F7FF] card-md shadow-sm">
                 <div class="card-body">
                   <div class="border bg-white border-none p-1 rounded-md w-2/5">
@@ -195,6 +210,7 @@
                   </div>
                 </div>
               </div>
+              <!------------------------------- card6---------------------- -->
               <div class="card w-80 bg-[#F4F7FF] card-md shadow-sm">
                 <div class="card-body">
                   <div class="border bg-white border-none p-1 rounded-md w-2/5 ">
@@ -221,7 +237,7 @@
             </div>
               
           </div>
-
+                   <!------------------------------- side card---------------------- -->
            <div id="show" class="bg-white p-6 rounded-lg shadow-md w-[524px]">
             
             <div class="flex items-center justify-center space-x-3 mb-4">
@@ -230,7 +246,7 @@
             </div>
     
             <!-- Clear History Button -->
-            <button id="remove" class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+            <button id="remove" class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition ">
               Clear History
           </button>
 

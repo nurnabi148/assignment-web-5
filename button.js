@@ -31,14 +31,28 @@ const more=document.getElementById('increment');
 const clear=document.getElementById('show');
 const finish=document.getElementById('remove');
 const kaka=document.getElementById('history-item');
+
+
 for(let i=0;i<alertButton.length;i++)
 {
+    alertButton[i].countClick = 0;
     alertButton[i].addEventListener('click',function()
-    
-{   
 
-    alertButton[i].disabled=true;
+{   
+    alertButton[i].countClick++;
+    if(alertButton[i].countClick === 5)
+    {
+        alert("last alert")
+        
+    }
+        
+    else
+    {
+         
     alert("Board update successfully")
+    alertButton[i].disabled=true; 
+    }
+    
 
     const hhNew=new Date();
     const kkUpdate=hhNew.toLocaleTimeString();
@@ -52,16 +66,24 @@ for(let i=0;i<alertButton.length;i++)
     clear.appendChild(notonTime);
     kaka.appendChild(notonTime);
      
-    const historyText=`
-    You have completed the task Add Dark Mode at 12:48:15 PM
+    // const historyText=`
+    // You have completed the task Add Dark Mode at 12:48:15 PM
    
-    `
-    const historyItem=document.createElement('p');
-    historyItem.textContent=historyText;
-    clear.appendChild(historyItem);
-    kaka.appendChild(historyItem);
+    // `
+    // const historyItem=document.createElement('p');
+    // historyItem.textContent=historyText;
+    // clear.appendChild(historyItem);
+    // kaka.appendChild(historyItem);
 
     clear.style.display='block';
+
+ //---------------------history clear------------
+    document.getElementById('remove').addEventListener('click',function(event)
+    {
+        event.preventDefault();
+        kaka.innerHTML='';
+        
+    })
 
     // ------decrement TAsk Assign--------
     let lessNumber=parseInt(less.innerText);
@@ -75,14 +97,9 @@ for(let i=0;i<alertButton.length;i++)
     more.innerText=updateMoreNumber;
 
 
-    //---------------------history clear------------
+   
     
-    document.getElementById('remove').addEventListener('click',function(event)
-    {
-        event.preventDefault();
-        kaka.innerHTML='';
-        
-    })
+    
     
 
 
