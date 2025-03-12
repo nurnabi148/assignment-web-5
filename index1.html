@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="index.css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-[#F4F7FF]">
+    
+        <header class="max-w-screen-2xl min-h-24 mx-auto">
+          <nav class="pt-10">
+            <div class="navbar bg-base-100 shadow-sm rounded-2xl justify-between items-center">
+                <div class="flex justify-center items-center pl-5 py-5 gap-5">
+                  <img src="assets/logo.png" alt="">
+                  <!-- <a class="btn btn-ghost text-xl">Devboard</a> -->
+                   <h1 class="text-xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class=" flex gap-5 pr-5">
+                  
+                    <button id="back-first-page" class="btn btn-xs sm:btn-sm md:btn-md bg-blue-700 text-white font-bold text-xl p-5 rounded-md ">back to Dev</button>
+                </div>
+              </div>
+        </nav>
+        </header>
+        <main class="items-center max-w-screen-2xl min-h-24 mx-auto mt-5">
+            <h1 class="text-center font-bold text-4xl">Some of question</h1>
+            
+           <section class="border shadow-xl rounded-xl border-none mt-10 bg-white p-5">
+            <h1 class="font-bold text-3xl ">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-gray-300 border-dashed mb-2 mt-2">
+            <div class="p-10">
+
+                <li class="font-semibold text-gray-500 text-xl">getElementbyclass()</li>
+                <li class="font-semibold text-gray-500 text-xl">getElementbyTagName()</li>
+                <li class="font-semibold text-gray-500 text-xl">queryselector()</li>
+                <li class="font-semibold text-gray-500 text-xl">queryselectorall()</li>
+                <li class="font-semibold text-gray-500 text-xl">getElementbyId()</li>
+            </div>
+           </section>
+
+           <section class="border shadow-xl rounded-xl border-none mt-10 bg-white p-5">
+            <h1 class="font-bold text-3xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="border-gray-300 border-dashed mb-2 mt-2">
+            <div class="p-10">
+
+                <li class="font-semibold text-gray-500 text-xl">innerHTML: sets the HTML content of an element.</li>
+                <li class="font-semibold text-gray-500 text-xl">innerText:sets the visible text inside an element.</li>
+                
+            </div>
+           </section>
+
+           <section class="border shadow-xl rounded-xl border-none mt-10 bg-white p-5">
+            <h1 class="font-bold text-3xl">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-gray-300 border-dashed mb-2 mt-2">
+            <div class="p-10">
+
+                <li class="font-semibold text-gray-500 text-xl">Event delegation is a technique in JavaScript that allows you to handle events efficiently by using a single event listener on a parent element instead of adding listeners to multiple child elements
+                  ...........................
+                  ...........................
+                </li>
+               
+                
+            </div>
+           </section>
+
+           <section class="border shadow-xl rounded-xl border-none mt-10 bg-white p-5">
+            <h1 class="font-bold text-3xl">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-gray-300 border-dashed mb-2 mt-2">
+            <div class="p-10">
+
+                <li class="font-semibold text-gray-500 text-xl">
+                  It first runs any event listeners on the target element.
+                </li>
+
+                <li class="font-semibold text-gray-500 text-xl">
+                  the event bubbles up to its parent, then grandparent, and so on until it reaches the document.
+                </li>
+               
+                
+            </div>
+           </section>
+
+           <section class="border shadow-xl rounded-xl border-none mt-10 bg-white p-5">
+            <h1 class="font-bold text-3xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-gray-300 border-dashed mb-2 mt-2">
+            <div class="p-10">
+
+                <li class="font-semibold text-gray-500 text-xl">
+                  an element using document.createElement().
+                </li>
+
+                <li class="font-semibold text-gray-500 text-xl">
+                  document.body.appendChild(newDiv);
+                </li>
+                <li class="font-semibold text-gray-500 text-xl">
+                  newDiv.remove();
+                </li>
+               
+                
+            </div>
+           </section>
+
+
+        </main>
+        <script src="back.js"></script>
+</body>
+</html>
