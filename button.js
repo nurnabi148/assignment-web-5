@@ -63,7 +63,7 @@ for(let i=0;i<alertButton.length;i++)
     
 
    
-    clear.appendChild(notonTime);
+    // clear.appendChild(notonTime);
     kaka.appendChild(notonTime);
      
     // const historyText=`
